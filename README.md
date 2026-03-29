@@ -36,7 +36,7 @@ csv-processor/
 │   ├── controller/
 │   │   └── CsvProcessorController.java    # MVC + REST endpoints
 │   ├── dto/
-│   │   ├── ProcessingBatch.java           # Groups results + summary stats
+│   │   └── ProcessingBatch.java           # Groups results + summary stats
 │   ├── entity/
 │   │   ├── Employee.java                  # Employee data + eligibility logic
 │   │   └── ProcessingResult.java          # Immutable result record (JSON-mapped)
