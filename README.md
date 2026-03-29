@@ -37,7 +37,6 @@ csv-processor/
 │   │   └── CsvProcessorController.java    # MVC + REST endpoints
 │   ├── dto/
 │   │   ├── ProcessingBatch.java           # Groups results + summary stats
-│   │   └── CustomRaiseRequest.java        # Bonus preview request DTO
 │   ├── entity/
 │   │   ├── Employee.java                  # Employee data + eligibility logic
 │   │   └── ProcessingResult.java          # Immutable result record (JSON-mapped)
