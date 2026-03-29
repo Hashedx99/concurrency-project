@@ -90,10 +90,19 @@ cd csv-processor
 use `http://localhost:8080` in your api tool (POSTMAN).
 
 ### Using the application
-
-1. Upload the `Data/Employees/employees.csv` (or any CSV matching the format below) via the /api/process endpoint
+**[Concurrency Project API](https://www.postman.com/hashedx99-2376480/workspace/concurrency-project/collection/50802721-3dcdff07-7e7e-4e03-b520-4f2dcb3485d5)**
+1. Upload the `Data/Uploads/test_employees.csv` (or any CSV matching the format below) via the /api/process endpoint
 2. View results in the generated JSON file under `Data/ProcessedResults/`
 3. Results will also be logged to the console with before/after salary and raise details
+
+#### Endpoint Details
+| Endpoint               | Method | Description                       | Usage                                                                                          |
+|------------------------|--------|-----------------------------------|------------------------------------------------------------------------------------------------|
+| `/api/process`         | POST   | Upload CSV file for processing    | set Content-Type to form-data, and upload the file under the key `file`. set the type to file. |
+| `/api/batches`         | GET    | List previously processed batches | -                                                                                              |
+| `/api/batches/{batchId}` | GET    | Get batch details                 | -                                                                                              |
+| `/api/uploads`         | GET    | Get all uploaded files            | -                                                                                              |
+
 
 ---
 
@@ -101,9 +110,9 @@ use `http://localhost:8080` in your api tool (POSTMAN).
 
 ```
 id,name,salary,joined_date,role,project_completion_percentage
-Alice Johnson,85000,2019-03-15,Director,92
-Bob Smith,60000,2021-07-01,Manager,75
-Carol White,45000,2023-01-10,Employee,55
+Alice Johnson,85000,2019-03-15,Director,0.92
+Bob Smith,60000,2021-07-01,Manager,0.75
+Carol White,45000,2023-01-10,Employee,0.55
 ```
 
 | Column                          | Type      | Format                                               |
