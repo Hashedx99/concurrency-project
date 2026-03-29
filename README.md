@@ -60,8 +60,8 @@ csv-processor/
 ├── src/main/resources/
 │   └── application.properties
 ├── Data/
-│   ├── Employees/
-│   │   └── test_employees.csv                  # Sample CSV for testing
+│   ├── Uploads/
+│       └── test_employees.csv                  # Sample CSV for testing; uploading a file with the same name will overwrite it
 └── pom.xml
 ```
 
